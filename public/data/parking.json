@@ -1,0 +1,46 @@
+{
+  "parkings": [
+    {
+      "id": 1,
+      "name": "پارکینگ نوی دایکندی",
+      "address": "دایکندی، نیلی، شهرک جدید زیر مسجد جامع",
+      "totalSpots": 200,
+      "availableSpots": 140,
+      "hourlyRate": 20,
+      "status": "open",
+      "features": ["car", "motorcycle", "disabled", "ev"],
+      "is24h": true,
+      "image": "/images/laryssa-ares-ky1Pd0Sa-3Q-unsplash.jpg",
+      "lat": 33.722,
+      "lng": 66.123
+    },
+    {
+      "id": 2,
+      "name": "پارکینگ مرکزی نیلی",
+      "address": "نیلی، مرکز شهر، پشت جلب و جذب",
+      "totalSpots": 150,
+      "availableSpots": 45,
+      "hourlyRate": 30,
+      "status": "busy",
+      "features": ["car", "motorcycle", "disabled", "ev"],
+      "is24h": true,
+      "image": "/images/photo-1573348722427-f1d6819fdf98.jpeg",
+      "lat": 33.720,
+      "lng": 66.125
+    },
+    {
+      "id": 3,
+      "name": "پارکینگ جنوبی نیلی",
+      "address": "نیلی، بازار کهنه، نزدیک شهرک محمد بیک",
+      "totalSpots": 100,
+      "availableSpots": 12,
+      "hourlyRate": 25,
+      "status": "full",
+      "features": ["car", "motorcycle", "disabled", "ev"],
+      "is24h": false,
+      "image": "/images/parking-zaer.jpg",
+      "lat": 33.718,
+      "lng": 66.130
+    }
+  ]
+}
