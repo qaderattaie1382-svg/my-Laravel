@@ -1,38 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/features', function () {
-    return view('features');
-});
-
-Route::get('/pricing', function () {
-    return view('pricing');
-});
-
-Route::get('/signup', function () {
-    return view('signup');
-});
-
-Route::get('/profile', function () {
-    return view('profile');
-});
-
-Route::get('/zones', function () {
-    return view('zones');
-});
-
-Route::view('/login', 'auth.login');
-Route::view('/auth/login', 'auth.login');
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/features', [PageController::class, 'features'])->name('features');
+Route::get('/pricing', [PageController::class, 'pricing'])->name('pricing');
+Route::get('/zones', [PageController::class, 'zones'])->name('zones');
+Route::get('/signup', [PageController::class, 'signup'])->name('signup');
+Route::get('/login', [PageController::class, 'login'])->name('login');
+Route::get('/auth/login', [PageController::class, 'login'])->name('auth.login');
+Route::get('/profile', [PageController::class, 'profile'])->name('profile');
