@@ -6,6 +6,9 @@
     <li><a href="{{ url('/pricing') }}">هزینه ها</a></li>
     <li><a href="{{ url('/about') }}">درباره ما</a></li>
     <li><a href="{{ url('/contact') }}">تماس</a></li>
+    <li><a href="{{ route('parkings.index') }}">مدیریت پارکینگ‌ها</a></li>
+    <li><a href="{{ route('bookings.index') }}">مدیریت رزروها</a></li>
+    <li><a href="{{ route('users.index') }}">مدیریت کاربران</a></li>
     <li><a href="{{ url('/profile') }}" id="mobileProfileLink" style="display:none">👤 پروفایل</a></li>
   </ul>
   <div class="nav-actions-mobile">
